@@ -1,0 +1,114 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+/* Generales*/
+
+body{
+    width: min(90%, 1200px);
+    background-color: coral;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0 auto;
+}
+
+/* Header */
+
+header{
+    width: 100%;
+    background-color: black;
+    display: flex;
+    padding: 10px;
+}
+
+header .header_logo{
+    width: 15%;
+}
+
+header .header_logo img{
+    width: 100px;
+    height: 100px;
+}
+
+header .header_nombre{
+    width: 75%;
+}
+
+header .header_nombre h1{
+    color: white;
+    text-align: center;
+}
+
+/* Navegacion */
+
+nav{
+    width: 100%;
+    background-color: darkslategrey;
+    /* padding: 10px; */
+}
+
+nav ul{
+    list-style-type: none; /* Quitar vinetas */
+    display: flex;
+    /* justify-content: space-around; */
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li{
+    background-color: yellow;
+    flex: auto;
+    text-align: center;
+    padding: 10px;
+}
+
+nav ul li a{
+    text-decoration: none; /* Desaparece subrayado de enlaces */
+    font-size: 25px;
+    color: black; 
+    font-weight: 500;
+}
+
+nav ul li:hover{
+    background-color:mediumturquoise;   
+}
+
+/* Seccion Principal */
+
+.seccion_principal{
+    width: 100%;
+    display: flex;
+    flex-grow: 1;
+}
+
+.seccion_principal main{
+    width: 75%;
+    background-color:darkgoldenrod;
+}
+
+.seccion_principal aside{
+    width: 25%;
+    background-color: darkgray;
+}
+
+/* Footer */
+
+footer{
+    width: 100%;
+    background-color: black;
+}
+
+footer p{
+    color: white;
+    font-weight: bold;
+}
+
+/* Seccion Responsiva */
+
+@media screen and (max-width: 768px) {
+    nav ul{
+        flex-direction: column;
+    }
+}
